@@ -1,0 +1,289 @@
+body,
+header {
+	background-color: var(--body_bg);
+}
+
+header {
+	box-shadow: var(--shadow);
+	z-index: 99;
+    position: relative;
+}
+
+a.nav-link {
+	padding: 5px 10px;
+	margin: 0 15px;
+	font-size: 17px;
+	font-weight: 400;
+	color: var(--black-white-text);
+	font-family: 'Poppins';
+	transition: .5s ease-in-out;
+}
+
+a.nav-link:hover {
+	color: var(--pink-color);
+}
+
+.light-logo {
+	display: none;
+}
+
+html.dark .navbar-brand .dark-logo {
+	display: none;
+}
+
+html.dark .navbar-brand .light-logo {
+
+	display: block;
+}
+
+
+/* home section css start */
+.home_text span,
+.social_link span {
+	font-weight: 500;
+	letter-spacing: 3px;
+}
+
+section.home {
+	height: 90vh;
+	display: flex;
+	align-items: center;
+}
+
+.home_text.text-center h1 {
+	font-size: 75px;
+	font-family: 'Poppins';
+	color: var(--black-white-text);
+}
+
+
+
+.social_link ul li {
+	margin: 0 5px;
+	box-shadow: var(--shadow);
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	font-size: 14px;
+	transition: .5s ease-in-out;
+
+}
+
+
+
+.social_link ul li a svg path {
+	fill: var(--black-white-text);
+}
+
+.social_link ul li:hover {
+	background-color: #ff014f;
+	transition: .5s ease-in-out;
+}
+
+.social_link ul li:hover a svg path {
+	fill: white;
+	transition: .5s ease-in-out;
+}
+
+.typewriter {
+	width: 21.5ch;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 4px solid #212121;
+	animation: cursor 1s step-start infinite, text 5s steps(18) alternate infinite;
+	display: inline-block;
+}
+
+@keyframes cursor {
+
+	0%,
+	100% {
+		border-color: #ff014f;
+	}
+}
+
+@keyframes text {
+	0% {
+		width: 0;
+	}
+
+	100% {
+		width: 21.5ch;
+	}
+}
+
+.home_text p {
+	color: var(--black-white-text);
+	font-family: 'Poppins';
+	font-weight: 500;
+}
+
+/* home section css end */
+/* services css start*/
+.title {
+	color: var(--pink-color);
+	letter-spacing: 2px;
+	font-weight: 500;
+}
+
+.heading-title h1 {
+	font-size: 60px;
+	font-weight: 700;
+	color: var(--title-heading);
+	margin-bottom: 0;
+}
+
+.box_a {
+	box-shadow: var(--shadow);
+	padding: 25px 25px;
+	height: 100%;
+	transition: .5s ease-in-out;
+	color: var(--black-white-text);
+}
+
+.icon i {
+	font-size: 40px;
+	color: var(--pink-color);
+}
+
+.icon {
+	padding-bottom: 15px;
+}
+
+.box_a h2 {
+	font-size: 25px;
+}
+
+.heading-title {
+	margin-bottom: 40px;
+}
+
+.box_a:hover {
+	background: #ff014f;
+	transition: .5s ease-in-out;
+	cursor: pointer;
+}
+
+.box_a:hover h2,
+.box_a:hover p,
+.box_a:hover .icon i {
+	color: #fff;
+	transition: .5s ease-in-out;
+}
+
+/* services css end*/
+
+/* resume css start */
+.set_button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  margin: 5px 10px;
+  padding: 20px 20px;
+  min-width: 230px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  box-shadow: var(--shadow);
+  font-weight: 500;
+  color: var(--black-white-text);
+  transition: .5s ease-in-out;
+}
+.set_tab_box {
+  background: var(--gradient-box-w);
+}
+.set_button:hover{
+color: var(--pink-color);
+}
+
+
+/* resume css end */
+
+
+.text p {
+  color: var(--black-white-text);
+  font-family: 'Poppins';
+  font-weight: 500;
+}
+
+.box_a:hover p a{
+  color: #fff !important;
+  transition: .5s ease-in-out;
+}
+.box-intro {
+    position: relative;
+    box-shadow: var(--shadow);
+    padding: 20px 10px;
+    height: 100%;
+	border-radius: 0px 30px 0 30px;
+	overflow: hidden;
+}
+.box-intro p{
+color: var(--black-white-text);
+}
+.box-intro::before {
+    position: absolute;
+  
+    background-color: #ff014f4a;
+    height: 24px;
+    width: 35px;
+    content: '';
+    top: 0;
+    left: -10px;
+    border-radius: 1px 1px 40px 0px;
+}
+.box-intro::after {
+    position: absolute;
+
+    background-color: #ff014f4a;
+    height: 24px;
+    width: 35px;
+    content: '';
+    bottom: 0;
+    right: -10px;
+    border-radius: 40px 0px 0px 0px;
+}
+
+/* footer css start*/
+.footer-text {
+  color: var(--black-white-text);
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+footer{
+  background-color: var(--body_bg);
+  box-shadow: var(--shadow);
+  padding: 10px 0;
+}
+.box_a:hover {
+    transform: translateY(-10px);
+}
+/* footer css end */
+
+
+
+
+/* media query */
+
+
+@media screen and (min-width: 320px) and (max-width: 575px) {
+	.home_text h1 {
+		font-size: 20px !important;
+	}
+	.heading-title h1 {
+		font-size: 30px ;
+	}
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+	.home_text h1 {
+		font-size: 20px !important;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	.home_text h1 {
+		font-size: 45px !important;
+	}
+}
