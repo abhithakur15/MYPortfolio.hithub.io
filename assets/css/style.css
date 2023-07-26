@@ -5,7 +5,7 @@ header {
 
 header {
 	box-shadow: var(--shadow);
-	z-index: 99;
+	z-index: 9;
     position: relative;
 }
 
@@ -128,7 +128,7 @@ section.home {
 }
 
 .heading-title h1 {
-	font-size: 60px;
+	font-size: 50px;
 	font-weight: 700;
 	color: var(--title-heading);
 	margin-bottom: 0;
@@ -261,9 +261,19 @@ footer{
 }
 /* footer css end */
 
+.form-check-input:focus {
+    border-color: none !important; 
+     outline: 0; 
+     box-shadow: none !important;
+}
+.form-switch .form-check-input {
 
-
-
+    border: 1px solid black;
+}
+.form-switch .form-check-input:checked {
+   
+    border: 1px solid white;
+}
 /* media query */
 
 
